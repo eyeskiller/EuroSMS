@@ -23,8 +23,8 @@ If you want to send message
    $sms->setSender('Sender Foo);  //set sender - who is sending sms
    $sms->setMessage('First SMS from EuroSMS gateway'); //sms message
    $sms->send(); //send sms
-   echo $sms->state; //here is status of sending
-   echo $sms->id; //here is ID of message, is recommended to store this for check later (see $sms->info() )
+   echo $sms->getState(); //here is status of sending
+   echo $sms->getMessageID(); //here is ID of message, is recommended to store this for check later (see $sms->info() )
 ```
 
 If you want to enable debug you can set it
