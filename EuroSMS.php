@@ -144,4 +144,12 @@ class EuroSMS {
 
     return $return[0] == 'ok' ? true : false;
   }
+
+  public function getState(){
+    return $this->state;
+  }
+
+  public function getMessageID(){
+    return $this->id;
+  }
 }
