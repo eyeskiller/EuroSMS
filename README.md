@@ -17,14 +17,27 @@ If you want to send message
 ```
    include('EuroSMS.php);
    ...
-   ...
+   
+   //EuroSMS instance
    $sms = new EuroSMS();
-   $sms->setPhoneNumber('0902XXXXXX); //set phone number
-   $sms->setSender('Sender Foo);  //set sender - who is sending sms
-   $sms->setMessage('First SMS from EuroSMS gateway'); //sms message
-   $sms->send(); //send sms
-   echo $sms->getState(); //here is status of sending
-   echo $sms->getMessageID(); //here is ID of message, is recommended to store this for check later (see $sms->info() )
+   
+   //set phone number
+   $sms->setPhoneNumber('0902XXXXXX);
+   
+   //set sender - who is sending sms
+   $sms->setSender('Sender Foo);
+   
+   //set message
+   $sms->setMessage('First SMS from EuroSMS gateway');  
+   
+    //send sms
+   $sms->send();
+   
+   //status of sending
+   echo $sms->getState();
+   
+   //ID of message, is recommended to store this for check later (see $sms->info() )
+   echo $sms->getMessageID();
 ```
 
 If you want to enable debug you can set it
