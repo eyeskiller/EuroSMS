@@ -41,7 +41,7 @@ class EuroSMS {
 
   private $debug = false;
 
-  private $secure = false;
+  private $secure = true;
 
   private $state;
 

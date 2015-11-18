@@ -33,10 +33,10 @@ If you want to enable debug you can set it
   $sms->debug(true);
 ```
 
-If you want to use HTTPS instead HTTP use this
+If you want disable HTTPS
 
 ```
-  $sms->isSecure(true);
+  $sms->isSecure(false);
 ```
 
 If you want to check info about SMS that you send (is sent, sending failed, etc...)
